@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            h1{
+                color:white;
+                text-align: center;
+                color:#f7e6ca;
+                
+            }
+            body{
+                background-color: #d9bbb0;
+                color:white;
+
+                
+
+
+            }
+            h3{
+                text-align:center
+                font-weight:bold;
+                 font-family: "DM Sans", sans-serif;
+               
+            }
+        
+            form label{
+                display:block;
+                margin-top:30px;
+                font-weight:bold;
+            }
+           form input form select form text-area{
+            padding:20px;
+            margin-top:20px;
+            border-radius:5px;
+            border:2px solid white;
+            box-sizing :border-box;
+           }
+          form button{
+            margin-top:15px;
+            background-color:#f7e6ca;
+            color:white;
+            padding:10px 20px;
+            border-radius: 9px;
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: large;
+          }  
+         fieldset{
+            margin:20px;
+            border:1px solid white;
+            padding:20px;
+            box-shadow: 5px 5px 5px #AD9C8E;
+            
+            
+         }
+         legend{
+            font-family:'Courier New', Courier, monospace;
+            font-weight:bold;
+            font-size:20px
+         }
+
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>Order Form</h1>
+        <form action="submit" method="post">
+           
+                
+                <fieldset>
+                    <legend><strong>Personal Information:</strong></legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"required><br>
+                <label for="email">Email Address:</label>
+                <input type="text" id ="email" email="email" required><br>
+                <label for ="contact">Phone Number:</label>
+                <input type="tel"min="11"max="13" number="number" required>
+                </fieldset>
+                <div class="selection">
+                    <fieldset>
+                        <legend><strong>Cake Details</strong></legend>
+                    <Strong><p>Choose Your Order</p></Strong>
+                    <label for="cake">Select Cake Type:</label>
+                    <select id="cake-type" name="cake" required>
+                    <option value="">Select Flavor</option>
+                    <option value="chocolate">Chocolate Cake</option>
+                    <option value="starwberry">Strawberry Cake </option>
+                    <option value="Mango">Mango Graham Cake</option>
+                    <option value="Mocha">Mocha Cake</option>
+                    <option value="blueberry">Blueberry Cheese Cake</option>
+                    </select><br>
+                    <label for="cake-tart-sizes" name="sizes"required>Choose Size:</label>
+                    <select>
+                    <option value="">Select</option>
+                    <option>8 inches</option>
+                    <option>10 inches </option>
+                    <option>12 inches</option>
+                    <option>14 inches</option>
+                    <option>16 inches </option>
+                    </select><br>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number"min="1"max="10000"><br>
+
+
+                    
+                
+                
+                    
+                    <label for="Message" class="message">Cake Messages</label>
+                    <textarea id="message"name="message"placeholder="Please Type your Messages"></textarea><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend><strong>Tart Details</strong></legend>
+                    <label for="tarts">Select Tart Flavor </label>
+                    <select>
+                    <option value="">Select</option>
+                    <option value="chocolate">Chocolate Tart</option>
+                    <option value="starwberry">Strawberry Tart </option>
+                    <option value="Mango">Mango Graham Tart</option>
+                    <option value="Mocha">Mocha Tart</option>
+                    <option value="blueberry">Blueberry Cheese Tart</option>
+                    </select><br>
+                    <label for="cart-tart-sizes" name="sizes"required>Choose Size:</label>
+                    <select>
+                    <option value="">Select</option>
+                    <option>8 inches</option>
+                    <option>10 inches </option>
+                    <option>12 inches</option>
+                    <option>14 inches</option>
+                    <option>16 inches </option>
+                    </select><br>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number"min="1"max="10000"><br>
+                   </fieldset>
+                     <button type="Submit">Place Order</button>
+
+
+
+
+                </div>
+
+
+
+        </form>
+    </body>
+</html>
